@@ -1,6 +1,6 @@
 import discord, requests, time
 
-r = requests.get('https://api.weather.gov/alerts/active/zone/TNZ099')
+r = requests.get('https://api.weather.gov/alerts/active/zone/<find your county code ex. NYZ001>')
 
 hold = r.json()
 
@@ -41,4 +41,4 @@ async def alarm_message():
 						client.send_message(mem,content ="test")
 '''
 
-client.run('NjA1Mjc3Njg5NjI4MDY1ODEx.XT6RPA.dRzH_37nFqlxeHmnVTbtS_1lYRA')
+client.run('token here')
